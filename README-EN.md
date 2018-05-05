@@ -1,4 +1,4 @@
-####Preparation of the database
+####Preparation of the database####
 * `tensorflow` and `tensorboard` libraries need to be installed according to the [following instruction](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets).
 
 * Next, we set properties `IMAGE_SIZE` and `ARCHITECTURE` to convenient values (I used the same ones as in the examle):
@@ -10,7 +10,7 @@ ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
 
 * Then, we can run `001.py` script with a following command `python3 001.py` which, on the basis of the data contained in `decor.cvs`, will move the images to the right folders.
 
-####Image conversion to JPEG format
+####Image conversion to JPEG format####
 
 Now, we want to convert all these `png` files into `jpg` files because of instructions which I got by mail **"This training script doesn't like other files than JPEG : )"**. In order to achive this we will use `PIL` library.
 
@@ -18,7 +18,7 @@ Now, we want to convert all these `png` files into `jpg` files because of instru
 
 * Then, we run `002` script by using `python3 001.py` command which, by the use of the installed library, will convert all `png` files to `jpg` format.
 
-####Run the training:
+####Run the training:####
 
 After these preparations, we can run following command:
 
@@ -36,7 +36,7 @@ python3 -m scripts.retrain \
 
 all values in this command are default and they come from the previously given link.
 
-####Testing
+####Testing####
 
 I chose native `02_07_2_003.jpg` file for testing on which Kashubian pattern is presented. We run this command:
 

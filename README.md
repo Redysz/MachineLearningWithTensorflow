@@ -1,4 +1,4 @@
-####Przygotowanie bazy plików
+####Przygotowanie bazy plików####
 * Należy mieć zainstalowany `tensorflow` oraz `tensorboard` wedle instrukcji zawartej [tutaj](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets).
 
 * Ustawiamy dogodne dla nas wielkości `IMAGE_SIZE` oraz `ARCHITECTURE`:
@@ -10,7 +10,7 @@ ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
 
 * Uruchamiamy skrypt `001.py` poleceniem `python3 001.py`, który na podstawie danych zawartych w pliku `decor.cvs` wrzuci obrazy do odpowiednich katalogów.
 
-####Konwersja plików do formatu JPEG
+####Konwersja plików do formatu JPEG####
 
 Następnie (można to oczywiście było zrobić również wcześniej) chcemy pliki typu `png` przerobić na pliki typu `jpg` wedle informacji jakiej dostałem na mailu **"This training script doesn't like other files than JPEG : )"**. W tym celu wykorzystamy bibliotekę `PIL`.
 
@@ -18,7 +18,7 @@ Następnie (można to oczywiście było zrobić również wcześniej) chcemy pli
 
 * Uruchamiamy drugi ze skryptów o osobliwej nazwie `002` poleceniem `python3 001.py`, który przy pomocy zainstalowanej biblioteki przekonwertuje wszystkie pliki `png` do formatu `jpg`.
 
-####Uruchomienie ćwiczenia/nauki bazy:
+####Uruchomienie ćwiczenia/nauki bazy:####
 
 Uruchamiamy polecenie:
 
@@ -36,7 +36,7 @@ python3 -m scripts.retrain \
 
 wszystkie wartości w powyższym poleceniu są wartoścami domyślnymi z linku podanym wcześniej.
 
-####Test
+####Test####
 
 Do testów wybrałem rodzimy plik `02_07_2_003.jpg` przedstawiający wzór kaszubski. Uruchamiamy polecenie:
 
